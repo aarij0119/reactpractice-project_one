@@ -3,8 +3,9 @@ import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
-    <header className="flex text-black w-full p-4">
-      <div className="mr-auto">
+    <header className="flex text-black w-full p-4 fixed top-0 left-0 z-10 bg-white">
+      <div className='flex justify-between w-full items-center mx-auto max-w-7xl'>
+      <div className="">
         <h1 className="text-2xl uppercase font-bold roboto-bold-italic">TechyStar</h1>
       </div>
       <div className="space-x-4 flex">
@@ -13,6 +14,7 @@ const Header = () => {
         <Link className="text-black" to="/about">About</Link>
         <Link className="text-black" to="/brands">Brands</Link>
         <Link className="text-black" to="/services">Services</Link>
+      </div>
       </div>
     </header>
   );
