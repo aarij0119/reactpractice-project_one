@@ -93,14 +93,14 @@
   } */
 
   /* Container for the entire section */
-#section1 {
+#home {
   position: relative;
   overflow: hidden;
   background-color: #090c31;
 }
 
 /* Pseudo-element for the blurred background */
-#section1::before {
+#home::before {
   content: "";
   position: absolute;
   top: 0;
@@ -113,7 +113,7 @@
 }
 
 /* Content container */
-#section1 .content {
+#home .content {
   position: relative;
   top: 20rem;
   color: white;

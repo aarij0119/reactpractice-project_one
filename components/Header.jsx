@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import {HashLink} from 'react-router-hash-link'
 
 const Header = () => {
   return (
@@ -9,11 +10,11 @@ const Header = () => {
         <h1 className="text-2xl uppercase font-bold roboto-bold-italic">TechyStar</h1>
       </div>
       <div className="space-x-4 flex">
-        <Link className="text-black" to="/">Home</Link>
-        <Link className="text-black" to="/contact">Contact</Link>
-        <Link className="text-black" to="/about">About</Link>
-        <Link className="text-black" to="/brands">Brands</Link>
-        <Link className="text-black" to="/services">Services</Link>
+        <HashLink to={"/#home"} className="text-black" >Home</HashLink>
+        <Link to={"/contact"} className="text-black" >Contact</Link>
+        <HashLink to={'/#about'} className="text-black">About</HashLink>
+        <HashLink to={'/#brands'} className="text-black">Brands</HashLink>
+        <Link to={"/services"} className="text-black" >Services</Link>
       </div>
       </div>
     </header>

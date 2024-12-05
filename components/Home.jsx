@@ -4,7 +4,7 @@ const Home = () => {
 
   return (
     <>
-      <div id='section1' className="w-full h-screen relative rounded-b-[7rem]">
+      <div id='home' className="w-full h-screen relative rounded-b-[7rem] mt-10">
         <div className='content pr-4'>
           <h1 className='text-7xl uppercase roboto-bold-italic z-10 '>TechyStar</h1>
           <p className='font-bold uppercase flex justify-end'>Solution to all your problems</p>
@@ -22,7 +22,7 @@ const Home = () => {
         </div>
       </div>
       {/* section3 */}
-      <div className='w-full h-screen bg-[#090c31] pt-40'>
+      <div className='w-full h-screen bg-[#090c31] pt-40' id='about'>
         <div className='w-3/5 bg-white h-4/5 rounded-r-[10rem] p-5 flex items-center justify-center flex-col'>
           <h1 className='text-4xl font-semibold border-b-2 border-black mb-2'>Who we are?</h1>
           <p className='font-mono mt-2'>
@@ -44,7 +44,7 @@ const Home = () => {
         </div>
       </div>
       {/* section4 */}
-      <div className='w-full h-screen bg-[#0e0e17] pt-40 flex justify-end'>
+      <div className='w-full h-screen bg-[#090c31] pt-40 flex justify-end' id='brands'>
         <div className='w-3/5 bg-[#5853ff] h-4/5 rounded-l-[10rem] p-5 flex items-center justify-center flex-col gap-5'>
           <div className='flex  items-center justify-center'>
               <h1 className='text-3xl font-bold border-b-4 border-white  text-white'>Brands</h1>

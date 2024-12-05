@@ -6,8 +6,7 @@ import Contact from '../components/Contact'
 import About from '../components/About'
 import Brand from '../components/Brand'
 import Services from '../components/Servises'
-
-
+import Footer from '../components/Footer'
 
 const App = () => {
   return (
@@ -20,6 +19,7 @@ const App = () => {
         <Route path='/brands' element={<Brand/>}/>
         <Route path='/services' element={<Services/>}/>
       </Routes>
+      <Footer />
     </Router>
   )
 }
