@@ -87,4 +87,59 @@
       transform: translateY(-10px);
     }
   }
+/* 
+  #section1{
+    filter: blur(4px)
+  } */
+
+  /* Container for the entire section */
+#section1 {
+  position: relative;
+  overflow: hidden;
+  background-color: #090c31;
+}
+
+/* Pseudo-element for the blurred background */
+#section1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('../src/assets/1.png') center/cover no-repeat;
+  filter: blur(4px);
+  z-index: 0;
+}
+
+/* Content container */
+#section1 .content {
+  position: relative;
+  top: 20rem;
+  color: white;
+  text-align: right;
+}
+
+/* Custom Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px; /* Width of the vertical scrollbar */
+  height: 7px; /* Height of the horizontal scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #767575; /* Background of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #090c31; /* Color of the scrollbar thumb */
+  border-radius: 10px; /* Roundness of the scrollbar thumb */
+  border: 2px solid #f1f1f1; /* Adds padding around the scrollbar thumb */
+}
+
+/* Hover effect for the scrollbar thumb */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Darker color when hovering over the scrollbar thumb */
+}
+
+
   
