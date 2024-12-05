@@ -141,5 +141,21 @@
   background: #555; /* Darker color when hovering over the scrollbar thumb */
 }
 
+#icon:hover{
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  transition: all linear 0.3s;
+}
+#icon{
+  animation: upimage  linear 1s infinite alternate;
+}
+
+@keyframes upimage {
+  to{
+    transform: translateY(-10px);
+  }
+}
+
 
   

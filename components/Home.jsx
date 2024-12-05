@@ -1,6 +1,7 @@
 import React from 'react';
-
+import { FaGoogle, FaAmazon, FaYoutube, FaInstagram } from 'react-icons/fa';
 const Home = () => {
+
   return (
     <>
       <div id='section1' className="w-full h-screen relative rounded-b-[7rem]">
@@ -23,7 +24,7 @@ const Home = () => {
       {/* section3 */}
       <div className='w-full h-screen bg-[#090c31] pt-40'>
         <div className='w-3/5 bg-white h-4/5 rounded-r-[10rem] p-5 flex items-center justify-center flex-col'>
-        <h1 className='text-4xl font-semibold border-b-2 border-black mb-2'>Who we are?</h1>
+          <h1 className='text-4xl font-semibold border-b-2 border-black mb-2'>Who we are?</h1>
           <p className='font-mono mt-2'>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
             officiis hic illo quos sit commodi, aut magnam odio eligendi? Totam
@@ -44,9 +45,17 @@ const Home = () => {
       </div>
       {/* section4 */}
       <div className='w-full h-screen bg-[#0e0e17] pt-40 flex justify-end'>
-         <div className='w-3/5 bg-[#5853ff] h-4/5 rounded-l-[10rem] p-5'>
-
-         </div>
+        <div className='w-3/5 bg-[#5853ff] h-4/5 rounded-l-[10rem] p-5 flex items-center justify-center flex-col gap-5'>
+          <div className='flex  items-center justify-center'>
+              <h1 className='text-3xl font-bold border-b-4 border-white  text-white'>Brands</h1>
+          </div>
+        <div className='flex items-center justify-center gap-4'>
+        <div id="icon" className='bg-white p-4 rounded-full' style={{animationDelay: "0.3s"}}><FaGoogle size={32} /></div>
+          <div id="icon" className='bg-white p-4 rounded-full' style={{animationDelay: "0.6s"}}>  <FaAmazon size={32} /></div>
+          <div id="icon" className='bg-white p-4 rounded-full' style={{animationDelay: "0.9"}}><FaYoutube size={32} /></div>
+          <div id="icon" className='bg-white p-4 rounded-full' style={{animationDelay: "1.4s"}}><FaInstagram size={32} /></div>
+        </div>
+        </div>
       </div>
     </>
   );
