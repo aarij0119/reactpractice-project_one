@@ -5,7 +5,7 @@ const Contact = () => {
     <div className='w-full h-screen bg-[#090c31] pt-14  flex items-center justify-center'>
         <div className='w-3/5 h-4/6 bg-white rounded-r-[9rem] p-7 overflow-hidden'>
             <h1 className='text-2xl font-bold roboto-bold'>Contact Us</h1>
-            <div className='flex justify-center items-center gap-3 -mt-16 flex-col h-full '>
+            <div className='flex justify-center items-center gap-1 -mt-16 flex-col h-full '>
               <div className='flex items-start gap-3 py-2  '>
                 <h4>Name</h4>
                 <input className='px-2 py-1 w-96 outline-none rounded border-2 border-[#090c31]' type="text" placeholder='Abc' />
