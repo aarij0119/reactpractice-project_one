@@ -7,7 +7,8 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 const Services = () => {
   return (
-    <div className='bg-red pt-6 mx-auto w-4/5 mb-6'>
+    <div className='w-full sm:h-screen bg-[#090c31] p-4'>
+      <div className='lg:py-28 py-20 md:py-40 mx-auto lg:w-4/5 mb-6'>
       <Carousel
         infiniteLoop
         autoPlay
@@ -29,6 +30,7 @@ const Services = () => {
           <h1 className='text-xl uppercase'>Development</h1>
         </div>
       </Carousel>
+    </div>
     </div>
   );
 }

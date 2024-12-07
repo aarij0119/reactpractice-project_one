@@ -112,13 +112,7 @@
   z-index: 0;
 }
 
-/* Content container */
-#home .content {
-  position: relative;
-  top: 20rem;
-  color: white;
-  text-align: right;
-}
+ 
 
 /* Custom Scrollbar Styling */
 ::-webkit-scrollbar {

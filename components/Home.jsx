@@ -4,17 +4,17 @@ const Home = () => {
 
   return (
     <>
-      <div id='home' className="w-full h-screen relative rounded-b-[7rem] mt-10">
-        <div className='content pr-4'>
-          <h1 className='text-7xl uppercase roboto-bold-italic z-10 '>TechyStar</h1>
+      <div id='home' className="w-full h-[20rem] sm:h-[30rem] md:min-h-screen relative lg:rounded-b-[7rem] md:rounded-b-[4rem] mt-10">
+        <div className='pr-4 absolute top-32 sm:top-72 right-0  w-fit text-white'>
+          <h1 className='sm:text-7xl text-5xl uppercase roboto-bold-italic z-10 '>TechyStar</h1>
           <p className='font-bold uppercase flex justify-end'>Solution to all your problems</p>
         </div>
       </div>
       {/* section2 */}
       <div className='w-full h-screen bg-[#090c31] -mt-28'>
-        <div className='max-w-7xl mx-auto grid grid-cols-2 pt-56'>
+        <div className='max-w-7xl mx-auto grid md:grid-cols-2 md:pt-56 pt-40'>
           <div>
-            <img id='headphone_img' src='../src/assets/2.webp' alt='Headphone' />
+            <img className='mx-auto md:mx-0' id='headphone_img' src='../src/assets/2.webp' alt='Headphone' />
           </div>
           <div className='text-white font-mono flex items-center justify-center px-5'>
             <p>We are your one and only solution to the tech problems you face every day. We are a leading tech company whose aim is to increase the problem-solving ability in children.</p>
@@ -22,10 +22,10 @@ const Home = () => {
         </div>
       </div>
       {/* section3 */}
-      <div className='w-full h-screen bg-[#090c31] pt-40' id='about'>
-        <div className='w-3/5 bg-white h-4/5 rounded-r-[10rem] p-5 flex items-center justify-center flex-col'>
-          <h1 className='text-4xl font-semibold border-b-2 border-black mb-2'>Who we are?</h1>
-          <p className='font-mono mt-2'>
+      <div className='w-full  min-h-screen sm:h-[20rem] sm:min-h-screen bg-[#090c31] py-20 sm:pt-40' id='about'>
+        <div className='lg:w-4/5 md:w-11/12 m-4 md:m-0 bg-white rounded-xl sm:rounded-l-none lg:h-4/5  lg:rounded-r-[10rem] sm:rounded-r-[5rem]  p-5 flex items-center justify-center flex-col'>
+          <h1 className='text-4xl font-semibold border-b-2 border-black'>Who we are?</h1>
+          <p className='font-mono mt-2 flex flex-wrap'>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
             officiis hic illo quos sit commodi, aut magnam odio eligendi? Totam
             quis officiis fugit sunt dolores nostrum tenetur iusto est odio
@@ -44,8 +44,8 @@ const Home = () => {
         </div>
       </div>
       {/* section4 */}
-      <div className='w-full h-screen bg-[#090c31] pt-40 flex justify-end' id='brands'>
-        <div className='w-3/5 bg-[#5853ff] h-4/5 rounded-l-[10rem] p-5 flex items-center justify-center flex-col gap-5'>
+      <div className='w-full h-[20rem] sm:h-screen bg-[#090c31] pb-20 sm:pt-40 flex justify-end' id='brands'>
+        <div className='w-full lg:w-4/5 sm:w-11/12 rounded-xl  bg-[#5853ff] -mt-6 m-4 h-full sm:h-4/5 sm:rounded-l-[10rem] lg:p-5 flex items-center justify-center flex-col gap-5'>
           <div className='flex  items-center justify-center'>
               <h1 className='text-3xl font-bold border-b-4 border-white  text-white'>Brands</h1>
           </div>
